@@ -1,0 +1,14 @@
+doctype
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    title Primera página Jade y Express
+  body
+    - var arreglo = [1,2,3,4,5];
+    - for (var i = 0; i < arreglo.length; i++)
+      //p= arreglo[i]
+      //p Hola #{arreglo[i]}
+      p.
+        Hola haz click en #[a(href="referenciaLink") este link] por favor
+    - if(true)
+      p Hola esto se imprime

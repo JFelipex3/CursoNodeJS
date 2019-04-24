@@ -1,0 +1,5 @@
+extends ../../layout.jade
+block contenido
+  h1 Nombre Imagen: #{imagen.title}
+  if(typeof imagen.creator != "undefined")
+    p Creado Por: #{imagen.creator.email}
